@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+ 
+ <%= image_tag("https://s30.postimg.org/vnud52hwh/IKORCCLogo_20160214.png", :alt => "rss feed") %>
+
+
+  <%= render 'shared/navbar.html.erb' %>
+    <%= yield %>
+
+  </body>
+</html>
